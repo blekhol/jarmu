@@ -31,6 +31,16 @@ namespace jarmu
             aktualisSebesseg = 0;
         }
 
+        public Sportauto(string marka, string modell, int evjarat, int maxSebesseg)
+        {
+            this.marka = marka;
+            this.modell = modell;
+            this.evjarat = evjarat;
+            this.maxSebesseg = maxSebesseg;
+            this.aktualisSebesseg = 0;
+        }
+
+
         
     }
 }
