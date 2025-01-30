@@ -41,6 +41,21 @@ namespace jarmu
         }
 
 
-        
+        public void Gyorsit(int novekedes)
+        {
+            AktualisSebesseg += novekedes;
+            Console.WriteLine($"A {marka} {modell} gyorsul {novekedes} km/h-val. Új sebesség: {aktualisSebesseg} km/h.");
+        }
+
+        public void Fekez(int csokkentes)
+        {
+            AktualisSebesseg -= csokkentes;
+            Console.WriteLine($"A {marka} {modell} fékez {csokkentes} km/h-val. Új sebesség: {aktualisSebesseg} km/h.");
+        }
+
+        public override string ToString()
+        {
+            return $"Sportautó adatai:\nMárka: {marka}\nModell: {modell}\nÉvjárat: {evjarat}\nMax Sebesség: {maxSebesseg} km/h\nAktuális Sebesség: {aktualisSebesseg} km/h";
+        }
     }
 }
